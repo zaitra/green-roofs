@@ -1,9 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+// App.test.js
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import React from "react";
+import { render, unmountComponentAtNode } from "react-dom";
+import { act } from "react-dom/test-utils";
+
+import App from "./App";
+
+let container = null;
+beforeEach(() => {
+  // setup a DOM element as a render target
+  container = document.createElement("div");
+  document.body.appendChild(container);
+});
+
+afterEach(() => {
+  // cleanup on exiting
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
+});
+
+it("renders correct text", () => {
+  act(() => {
+    render(<App />, container);
+  });
+  expect(container.textContent).toBe("Edit src/App.js and save to reload.Learn React");
 });
