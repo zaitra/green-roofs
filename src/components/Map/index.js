@@ -1,14 +1,33 @@
 import React from "react"
-import { Map as LeafletMap, TileLayer } from "react-leaflet"
+import PropTypes from "prop-types"
+import { Map as LeafletMap, TileLayer, GeoJSON } from "react-leaflet"
 
-const center = [50.086385, 14.423693]
-
-function App() {
+function App({ geojsonData, zoom, center }) {
   return (
-    <LeafletMap zoom={15} center={center}>
+    <LeafletMap zoom={zoom} center={center}>
       <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+      <GeoJSON data={geojsonData} />
     </LeafletMap>
   )
+}
+
+App.propTypes = {
+  zoom: PropTypes.string,
+  center: PropTypes.arrayOf(PropTypes.number),
+  geojsonData: PropTypes.shape({
+    type: PropTypes.string,
+    features: PropTypes.arrayOf(
+      PropTypes.shape({
+        type: PropTypes.string
+      })
+    )
+  })
+}
+
+App.defaultProps = {
+  zoom: 15,
+  center: [0, 0],
+  geojsonData: {}
 }
 
 export default App
