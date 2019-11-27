@@ -2,10 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./index.css"
 
-function H2({ children, green }) {
-  console.log("children", children)
-  const name = green ? "green h2" : "default h2"
-  return <h2 className={name}> {children}</h2>
+function H2({ children, className }) {
+  return <h2 className={`${className} h2`}> {children}</h2>
 }
 
 H2.propTypes = {
@@ -13,11 +11,11 @@ H2.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]).isRequired,
-  green: PropTypes.bool
+  className: PropTypes.string
 }
 
 H2.defaultProps = {
-  green: false
+  className: ""
 }
 
 export default H2

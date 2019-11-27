@@ -2,10 +2,11 @@ import React from "react"
 import H2 from "../H2"
 import P from "../P"
 import Shine from "../Shine"
+import Container from "../Container"
 
 function SectionExplanation() {
   return (
-    <section className="explanation text-center">
+    <Container className="section text-center">
       <H2>
         What is a <Shine>Green roof?</Shine>
       </H2>
@@ -22,7 +23,7 @@ function SectionExplanation() {
         heat island effect. <br />
         <Shine>- wikipedia</Shine>
       </P>
-    </section>
+    </Container>
   )
 }
 
