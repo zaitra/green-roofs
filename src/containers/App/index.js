@@ -7,6 +7,7 @@ import bb2Roofs from "./data/bb2_roofs.json"
 import bb1Categ from "./data/bb1_roofs_categorized.json"
 import bb2Categ from "./data/bb2_roofs_categorized.json"
 import MapContainer from "../../components/MapContainer"
+import SectionTop from "../../components/SectionTop"
 // Center of Prague
 const center = [50.086385, 14.423693]
 // first rectangle
@@ -23,6 +24,7 @@ const bbTwoBounds = [
 function App() {
   return (
     <div>
+      <SectionTop />
       {/* All roofs */}
       <MapContainer>
         <Map geojsonData={[allRoofs]} zoom="15" center={center} />
