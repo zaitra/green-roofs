@@ -15,8 +15,8 @@ function SectionMotivation() {
         <P className="my-5 white">
           Náš proof of concept o zelených strechách v Prahe sme založili na
           základe dát a analýzy, ktorú spracoval{" "}
-          <Shine>Operátor ICT Data Platform.</Shine> Pre viac info kliknite{" "}
-          <Shine>tu.</Shine>
+          <Shine>Operátor ICT Data Platform.</Shine> <br /> Pre viac info
+          kliknite <Shine>tu.</Shine>
         </P>
         <P className="mb-5 white">
           In general, the statistic data shows that under ideal conditions, up

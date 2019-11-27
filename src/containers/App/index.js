@@ -12,6 +12,10 @@ import MapContainer from "../../components/MapContainer"
 import SectionTop from "../../components/SectionTop"
 import SectionExplanation from "../../components/SectionExplanation"
 import SectionMotivation from "../../components/SectionMotivation"
+import Container from "../../components/Container"
+import H2 from "../../components/H2"
+import Shine from "../../components/Shine"
+import P from "../../components/P"
 // Center of Prague
 const center = [50.086385, 14.423693]
 // first rectangle
@@ -28,17 +32,75 @@ const bbTwoBounds = [
 function App() {
   return (
     <div>
-      {/* Top of a page */}
+      {/*
+       * Top of a page
+       */}
       <SectionTop />
-      {/* Section explanation */}
+      {/*
+       * Explanation what is green roofs
+       */}
       <SectionExplanation />
-      {/* Section motivation */}
+      {/*
+       * Motivation why we care about that
+       */}
       <SectionMotivation />
-      {/* All roofs */}
+      {/*
+       * All roofs map with text
+       */}
+      <Container className="section text-center">
+        <H2>
+          Open data <Shine>+</Shine> Satellite imagery <Shine>=</Shine>
+        </H2>
+        <img
+          className="pb-5 pl-3"
+          src="/svg/green-roofs-logo-leaf.svg"
+          alt="Green roofs logo leaf"
+        />
+        <P>
+          Na mape môžete vidieť <Shine>1050 budov</Shine> centre Prahy, ktoré je
+          možné premeniť na green-roofs. Analýza ich rozdeľuje do{" "}
+          <Shine>4 kategorí</Shine> podľa nasledovných kritérii - rozloha,
+          vlastník, povrch, stúpanie..
+        </P>
+        <P>
+          Na tejto mape sa nachádza <Shine>45 budov v kategórii 1</Shine> (teda
+          najvhodnejšia strecha pre green-roof), ktoré splnili dané kritéria.{" "}
+          <Shine>
+            No sú to tie budovy, ktoré naozaj negatívne vplývajú na životné
+            prostredie?
+          </Shine>
+        </P>
+      </Container>
       <MapContainer>
         <Map geojsonData={[allRoofs]} zoom="15" center={center} />
       </MapContainer>
-      {/* Roofs only in bounding box 1&2 */}
+      {/*
+       * Roofs only in bounding box 1&2
+       */}
+      <Container className="section text-center">
+        <H2>
+          Open data <Shine>+</Shine> Satellite imagery <Shine>=</Shine>
+        </H2>
+        <img
+          className="pb-5 pl-3"
+          src="/svg/green-roofs-logo-leaf.svg"
+          alt="Green roofs logo leaf"
+        />
+        <P>
+          Na mape môžete vidieť <Shine>1050 budov</Shine> centre Prahy, ktoré je
+          možné premeniť na green-roofs. Analýza ich rozdeľuje do{" "}
+          <Shine>4 kategorí</Shine> podľa nasledovných kritérii - rozloha,
+          vlastník, povrch, stúpanie..
+        </P>
+        <P>
+          Na tejto mape sa nachádza <Shine>45 budov v kategórii 1</Shine> (teda
+          najvhodnejšia strecha pre green-roof), ktoré splnili dané kritéria.{" "}
+          <Shine>
+            No sú to tie budovy, ktoré naozaj negatívne vplývajú na životné
+            prostredie?
+          </Shine>
+        </P>
+      </Container>
       <MapContainer>
         <Map
           geojsonData={[bb1Roofs, bb2Roofs]}
