@@ -1,16 +1,51 @@
 import React from "react"
 import "./App.css"
 import Map from "../../components/Map"
-import allRoofs from "./bb_center_green_roofs.json"
+import allRoofs from "./data/bb_all_roofs.json"
+import bb1Roofs from "./data/bb1_roofs.json"
+import bb2Roofs from "./data/bb2_roofs.json"
+import bb1Categ from "./data/bb1_roofs_categorized.json"
+import bb2Categ from "./data/bb2_roofs_categorized.json"
 import MapContainer from "../../components/MapContainer"
 // Center of Prague
 const center = [50.086385, 14.423693]
+// first rectangle
+const bbOneBounds = [
+  [50.090759, 14.428063],
+  [50.087322, 14.437146]
+]
+// second rectangle
+const bbTwoBounds = [
+  [50.086436, 14.424331],
+  [50.0795, 14.432383]
+]
 
 function App() {
   return (
-    <MapContainer>
-      <Map geojsonData={allRoofs} zoom="15" center={center} />
-    </MapContainer>
+    <div>
+      {/* All roofs */}
+      <MapContainer>
+        <Map geojsonData={[allRoofs]} zoom="15" center={center} />
+      </MapContainer>
+      {/* Roofs only in bounding box 1&2 */}
+      <MapContainer>
+        <Map
+          geojsonData={[bb1Roofs, bb2Roofs]}
+          zoom="15"
+          center={center}
+          bounds={[bbOneBounds, bbTwoBounds]}
+        />
+      </MapContainer>
+      {/* Roofs only in bounding box 1&2 categorized */}
+      <MapContainer>
+        <Map
+          geojsonData={[bb1Categ, bb2Categ]}
+          zoom="15"
+          center={center}
+          bounds={[bbOneBounds, bbTwoBounds]}
+        />
+      </MapContainer>
+    </div>
   )
 }
 
