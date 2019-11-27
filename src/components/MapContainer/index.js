@@ -1,6 +1,6 @@
 import React from "react"
-import "./index.css"
 import PropTypes from "prop-types"
+import "./index.css"
 
 function MapContainer({ children }) {
   return <div className="map-container"> {children}</div>

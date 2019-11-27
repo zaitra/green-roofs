@@ -14,9 +14,7 @@ function SectionTop() {
         <p>(Proof of concept)</p>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="arrows">
-          <span />
-          <span />
-          {/* <img src="/svg/arrows.svg" className="arrows" alt="arrows" /> */}
+          <span /> <span />
         </a>
       </div>
     </div>
