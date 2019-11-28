@@ -18,6 +18,7 @@ import Shine from "../../components/Shine"
 import P from "../../components/P"
 import Footer from "../../components/Footer"
 import Navbar from "../../components/Navbar"
+import logo from "../../svg/green-roofs-logo-leaf.svg"
 // Center of Prague
 const center = [50.086385, 14.423693]
 // first rectangle
@@ -58,11 +59,7 @@ function App() {
           <H2>
             Open data <Shine>+</Shine> Satellite imagery <Shine>=</Shine>
           </H2>
-          <img
-            className="pb-5 pl-3"
-            src="/svg/green-roofs-logo-leaf.svg"
-            alt="Green roofs logo leaf"
-          />
+          <img className="pb-5 pl-3" src={logo} alt="Green roofs logo leaf" />
           <P>
             Na mape môžete vidieť <Shine>1050 budov</Shine> centre Prahy, ktoré
             je možné premeniť na green-roofs. Analýza ich rozdeľuje do{" "}
