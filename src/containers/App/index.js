@@ -17,6 +17,7 @@ import H2 from "../../components/H2"
 import Shine from "../../components/Shine"
 import P from "../../components/P"
 import Footer from "../../components/Footer"
+import Navbar from "../../components/Navbar"
 // Center of Prague
 const center = [50.086385, 14.423693]
 // first rectangle
@@ -33,6 +34,10 @@ const bbTwoBounds = [
 function App() {
   return (
     <div>
+      {/*
+       * Nav
+       */}
+      <Navbar />
       {/*
        * Top of a page
        */}

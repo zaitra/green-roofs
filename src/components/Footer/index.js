@@ -8,7 +8,10 @@ function Footer() {
       <P className="white">
         Copyright ©
         <img src="/svg/zaitra-logo.svg" alt="zaitra logo" />
-        <span>Zaitra s.r.o</span> 2019
+        <a href="https://zaitra.io/" _target="blank">
+          Zaitra s.r.o
+        </a>
+        <span> 2019</span>
       </P>
     </footer>
   )
