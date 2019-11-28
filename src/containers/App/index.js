@@ -16,6 +16,7 @@ import Container from "../../components/Container"
 import H2 from "../../components/H2"
 import Shine from "../../components/Shine"
 import P from "../../components/P"
+import Footer from "../../components/Footer"
 // Center of Prague
 const center = [50.086385, 14.423693]
 // first rectangle
@@ -130,6 +131,7 @@ function App() {
           </P>
         </section>
       </Container>
+      <Footer />
     </div>
   )
 }
