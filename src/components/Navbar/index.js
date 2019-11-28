@@ -1,5 +1,6 @@
 import React from "react"
 import "./index.css"
+import logo from "../../svg/zaitra-logo.svg"
 
 function Navbar() {
   return (
@@ -10,7 +11,7 @@ function Navbar() {
         rel="noopener noreferrer"
         className="navbar-brand"
       >
-        <img src="/svg/zaitra-logo.svg" alt="Company zaitra logo" />
+        <img src={logo} alt="Company zaitra logo" />
       </a>
       <div className="list">
         <button className="btn my-2 my-sm-0" type="button">
