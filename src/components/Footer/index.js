@@ -6,9 +6,9 @@ function Footer() {
   return (
     <footer>
       <P className="white">
-        Copyright
+        Copyright ©
         <img src="/svg/zaitra-logo.svg" alt="zaitra logo" />
-        <span>zaitra</span> 2019
+        <span>Zaitra s.r.o</span> 2019
       </P>
     </footer>
   )
