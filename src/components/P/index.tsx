@@ -1,11 +1,7 @@
 import React from "react"
+import { IPProps } from "../../types"
 
-interface PProps {
-  children: Object,
-  className?: String
-}
- 
-const P: React.FC<PProps> = (props) => {
+const P: React.FC<IPProps> = (props) => {
   return <p className={`paragraph ${props.className}`}> {props.children}</p>
 }
 

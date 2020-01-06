@@ -12,7 +12,7 @@ const SectionTop: React.FC = () => {
         <h2>{t('sections.top.header')}</h2>
         <p>{t('sections.top.description')}</p>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" className="arrows">
+        <a className="arrows">
           <span /> <span />
         </a>
       </div>

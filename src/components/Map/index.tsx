@@ -9,16 +9,7 @@ import {
 } from "react-leaflet"
 import { LatLngBoundsExpression } from 'leaflet'
 import heatmapImg from "../../img/heatmap.jpg"
-
-interface IMapProps {
-  zoom?: any,
-  geojsonData: any,
-  center?: any,
-  bounds?: any,
-  heatMapBounds?: any,
-  geoStyle?: any,
-  addFeatures?: any
-}
+import { IMapProps } from "../../types"
 
 const defaultGeo = {
   fillOpacity: 0.7,
@@ -35,6 +26,7 @@ const Map: React.FC <IMapProps> = ({
   geoStyle = defaultGeo,
   addFeatures = true
 }) => {
+  console.log('geojsonData', geojsonData)
   return (
     <LeafletMap zoom={zoom} center={center} scrollWheelZoom={false}>
       {/* GENERATE map background */}
