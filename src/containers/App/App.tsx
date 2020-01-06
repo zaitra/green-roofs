@@ -106,7 +106,7 @@ const App: React.FC = () => {
         </section>
       </Container>
       <MapContainer>
-        <Map geojsonData={[bb1Categ, bb2Categ]} zoom="15" center={centerPrague} />
+        <Map geojsonData={[bb1Categ, bb2Categ]} bounds={[bbOneBounds, bbTwoBounds]}zoom="15" center={centerPrague} />
       </MapContainer>
       {/*
        * Conclusion
