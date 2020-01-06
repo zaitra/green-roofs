@@ -15,7 +15,7 @@
     },
     "map-description": {
       "header": "Open data <0>+</0> Satellite imagery <0>=</0>",
-      "description1": "On the map, you can see <0> 1050 buildings <0/> in the center of Prague, which can be converted into green roofs. The analysis divides them into <0> 4 categories </0> according to the following criteria - area, owner, surface, climb.",
+      "description1": "On the map, you can see <0> 1050 buildings</0> in the center of Prague, which can be converted into green roofs. The analysis divides them into <0> 4 categories </0> according to the following criteria - area, owner, surface, climb.",
       "description2": "On this map, there are <0> 45 buildings in category 1 </0> (the most suitable roof for green roof) that met the criteria. <0>But are those buildings really the ones with a negative impact on the environment?</0>"
     },
     "map-description-bb": {
