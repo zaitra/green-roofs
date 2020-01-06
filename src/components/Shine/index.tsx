@@ -1,10 +1,7 @@
 import React from "react"
+import { IShineProps } from "../../types"
 
-interface ShineProps {
-  children: String
-}
-
-const Shine: React.FC<ShineProps> = (props) => {
+const Shine: React.FC<IShineProps> = (props) => {
   return <span className="shine"> {props.children}</span>
 }
 

@@ -1,11 +1,7 @@
 import React from "react"
+import { IContainerProps } from "../../types"
 
-interface ContainerProps {
-  className?: String,
-  children: Object
-}
-
-const Container: React.FC<ContainerProps> = (props) => {
+const Container: React.FC<IContainerProps> = (props) => {
   return <div className={`container ${props.className}`}> {props.children}</div>
 }
 
