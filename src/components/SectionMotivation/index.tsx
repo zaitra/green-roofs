@@ -16,6 +16,7 @@ const SectionMotivation: React.FC = () => {
         <P className="my-5 white">
           <Trans i18nKey="sections.motivation.par1">
             <Shine>.</Shine>
+            <a href="https://golemio.cz/en/node/1443#green-roof-analysis" target="blank" className="shine"></a>
           </Trans>
         </P>
         <P className="mb-5 white">
