@@ -16,7 +16,8 @@ interface IMapProps {
   center?: any,
   bounds?: any,
   heatMapBounds?: any,
-  geoStyle?: any
+  geoStyle?: any,
+  addFeatures?: any
 }
 
 const defaultGeo = {
@@ -26,19 +27,18 @@ const defaultGeo = {
   color: "#009548"
 }
 
-const Map: React.FC <IMapProps> = ({ geojsonData = [], zoom = 0, center = [0,0], bounds = [] , heatMapBounds = [], geoStyle = defaultGeo }) => {
+const Map: React.FC <IMapProps> = ({ 
+  geojsonData = [],
+  zoom = 0, center = [0,0], 
+  bounds = [],
+  heatMapBounds = [],
+  geoStyle = defaultGeo,
+  addFeatures = true
+}) => {
   return (
     <LeafletMap zoom={zoom} center={center} scrollWheelZoom={false}>
       {/* GENERATE map background */}
       <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
-
-      {/* 
-        * GENERATE layer/s of geojson 
-        *
-      */}
-      {geojsonData.map((geojsonData: GeoJSON.GeoJsonObject) => {
-        return <GeoJSON data={geojsonData} key={shortid.generate()} style={geoStyle} />
-      })}
 
       {/*
         * GENERATE rectangle/s 
@@ -55,6 +55,13 @@ const Map: React.FC <IMapProps> = ({ geojsonData = [], zoom = 0, center = [0,0],
           />
         )
       })}
+      {/* 
+        * GENERATE layer/s of geojson 
+        *
+      */}
+      {geojsonData.map((geojsonData: GeoJSON.GeoJsonObject) => {
+        return <GeoJSON data={geojsonData} key={shortid.generate()} style={geoStyle} onEachFeature={addFeatures ? onEachFeature : undefined} />
+      })}
 
       {/* 
         * GENERATE Image overlay 
@@ -66,6 +73,14 @@ const Map: React.FC <IMapProps> = ({ geojsonData = [], zoom = 0, center = [0,0],
       
     </LeafletMap>
   )
+}
+
+const onEachFeature = (feature: any, layer: any) => {
+  
+  let labelContent ='Building is in critical area.'
+  layer.bindPopup(labelContent, {closeButton: false});
+  layer.on('mouseover', () => { layer.openPopup(); });
+  layer.on('mouseout', () => { layer.closePopup(); });
 }
 
 export default Map
