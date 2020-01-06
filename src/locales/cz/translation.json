@@ -2,28 +2,28 @@
   "sections": {
     "top": {
       "header": "Praha",
-      "description": "(Koncept)"
+      "description": "(Prototyp)"
     },
     "explanation": {
-      "header": "Co je <0>Zelena strecha?</0>",
-      "description": "<0>ZELENEA STRECHA</0> or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane. Green roofs serve several purposes for a building, such as <0>absorbing rainwater, providing insulation</0>, creating a habitat for wildlife, increasing benevolence and <0>decreasing stress</0> of the people around the roof by providing a more aesthetically pleasing landscape, and <0>helping to lower urban air temperatures</0> and mitigate the heat island effect. <br /><0>- wikipedia</0>"
+      "header": "Co je to <0>zelená střecha?</0>",
+      "description": "<0>Zelená střecha</0> je termín používaný pro stavbu se zeleným povrchem - tedy střecha pokryta vegetací. Zelené střechy mají pro budovu několik výhod, počínaje <0> absorpcí dešťové vody, poskytováním izolace,</0> vytvářením stanovišť pro volně žijící živočichy atd. Ale hlavně to skutečně <0> pomáhá snižovat teplotu městského vzduchu </0> a zmírňovat efekt tepelného ostrova."
     },
     "motivation": {
-      "header": "Motivacia",
-      "par1": "Nas proof of concept about green roofs v Prahe sme založili na základe dát a analýzy, ktorú spracoval <0>Operátor ICT Data Platform.</0> <br /> Pre viac info kliknite <0>tu.</0>",
-      "par2": "Obecne, the statistic data shows that under ideal conditions, up to <0>1,659 ha of green roofs</0> could be installed in Prague, Czech Republic."
+      "header": "Motivace",
+      "par1": "Náš důkaz konceptu zelených střech v Praze byl založen na datech a analýzách připravených <0>Operátor ICT Data Platform.</0> Pro více informací klikněte <0> zde. </0>",
+      "par2": "Statistiky obecně ukazují, že za ideálních podmínek by mohlo být v Praze v České republice instalováno až <0> 1 659 ha zelených střech. </0>"
     },
     "map-description": {
-      "description1": "Na mape môžete vidieť <0>1050 budov</0> centre Prahy, ktoré je možné premeniť na green-roofs. Analýza ich rozdeľuje do <0>4 kategorí</0> podľa nasledovných kritérii - rozloha, vlastník, povrch, stúpanie..",
-      "header": "Otvorene data <0>+</0> satelitne snimky <0>=</0>",
-      "description2": "Na tejto mape sa nachádza <0>45 budov v kategórii 1</0> (teda najvhodnejšia strecha pre green-roof), ktoré splnili dané kritéria. <0>No sú to tie budovy, ktoré naozaj negatívne vplývajú na životné prostredie?</0>"
+      "header": "Otevřená data <0>+</0> kosmická data <0>=</0>",
+      "description1": "Na mapě je vidět <0> 1050 budov </0> v centru Prahy, které by mohly mít na zelené střechy. Analýza je rozděluje do <0> 4 kategorií </0> podle následujících kritérií - oblast, majitel, povrch, strmost.",
+      "description2": "Na této mapě je <0> 45 budov v kategorii 1 </0> (nejvhodnější kandidát pro zelenou střechu), které splňovaly kritéria. <0> Jsou však tyto budovy skutečně těmi, které mají negativní dopad na životní prostředí? </0>"
     },
     "map-description-bb": {
-      "description": "Na pomoc sme si zobrali teplotnú mapu zo satelitu Landsat 8, čo nám pomohlo <0>detekovať budovy v teplotne najhorších oblastiach</0> centra Prahy. Silno-červená farba indikuje vysokú teplotu v danej oblasti."
+      "description": "Vybrali jsme teplotní mapu ze satelitu Landsat 8, která nám pomohla <0> detekovat budovy v nejhorších částech </0> centra Prahy. Výrazně červená barva označuje vysokou teplotu v oblasti. "
     },
     "map-description-bb-cat": {
-      "description": "Ak by mesto nemalo dostatočné financie na premenu 92 striech na green roofs, dokážeme vyselektovať ešte užší výber striech - na nasledujúcej mape sú v danej oblasti <0>21 budov</0>, ktoré patria len do <0>kategórie 1</0> alebo <0>kategórie 2</0>."
+      "description": "Pokud město nemá dostatek peněz na přeměnu 92 střech na zelené střechy, můžeme vybrat ještě užší výběr střech - na následující mapě je znázorněno <0>21 budov</0> v oblasti, které patří pouze do <0>kategorie 1 nebo kategorie 2.</0>"
     },
-    "conclusion": "Po premene týchto striech na green-roofs sme schopný detekovať či sa <0> v daných oblastiach teplotná mapa zlepšila </0> čo môže pozitívne ovplyvniť život ľudí v Prahe."
+    "conclusion": "Po převodu těchto střech na zelené střechy můžeme zjistit, <0>zda se teplotní mapa v daných oblastech zlepšila</0>, což může pozitivně ovlivnit život v Praze."
   }
 }
