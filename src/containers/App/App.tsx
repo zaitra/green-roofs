@@ -70,7 +70,7 @@ const App: React.FC = () => {
        * All roofs
        */}
       <MapContainer>
-        <Map geojsonData={[allRoofs]} zoom="15" center={centerPrague} />
+        <Map geojsonData={[allRoofs]} zoom="15" center={centerPrague} addFeatures={false} />
       </MapContainer>
       {/*
        * Roofs only in bounding box 1&2 description + Map
