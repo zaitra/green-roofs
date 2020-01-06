@@ -26,7 +26,6 @@ const Map: React.FC <IMapProps> = ({
   geoStyle = defaultGeo,
   addFeatures = true
 }) => {
-  console.log('geojsonData', geojsonData)
   return (
     <LeafletMap zoom={zoom} center={center} scrollWheelZoom={false}>
       {/* GENERATE map background */}
