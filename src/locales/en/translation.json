@@ -6,20 +6,22 @@
     },
     "explanation": {
       "header": "What is a <0>Green roof?</0>",
-      "description": "<0>A Green roof</0> is a term used for building with green canopy - roof covered in vegetation. Green roofs have multiple advantages for the building, starting with <0> absorbing rainwater, providing insulation, creating a habitat for wildlife, etc. </0> But mainly it genuinely helps to <0>lower urban air temperature</0> and mitigate the heat island effect."
+      "description": "<0>A Green roof</0> is a term used for building with a green canopy - roof covered in vegetation. Green roofs have multiple advantages for the building, because the <0> absorb rainwater, provide insulation, create a habitat for wildlife, etc. </0> But mainly it genuinely helps to <0>lower urban air temperature</0> and mitigate the heat island effect."
     },
     "motivation": {
       "header": "Motivation",
       "par1": "Our proof of concept about green roofs in Prague was based on data and analysis prepared by the <0> ICT Data Platform Operator.</0> For more info click <1>here</1>.",
-      "par2": "In general, the statistics show that under ideal conditions, up to <0> 1,659 ha of green roofs</0> could be installed in Prague, Czech Republic."
+      "par2": "In general, the statistics show that under ideal conditions, up to <0> 1,659 ha of green roofs</0> could be installed <0> just in Prague, Czech Republic.</0>"
     },
     "map-description": {
       "header": "Open data <0>+</0> Satellite imagery <0>=</0>",
       "description1": "On the map, you can see <0> 1050 buildings</0> in the center of Prague, which can be converted into green roofs. The analysis divides them into <0> 4 categories </0> according to the following criteria - area, owner, surface, climb.",
-      "description2": "On this map, there are <0> 45 buildings in category 1 </0> (the most suitable roof for green roof) that met the criteria. <0>But are those buildings really the ones with a negative impact on the environment?</0>"
+      "description2": "On this map, there are <0> 45 buildings in category 1 </0> (the most suitable roof for green roof) that met the criteria.",
+     "description3": "" ,
+     "description4": "<0>But are those buildings really the ones with a negative impact on the environment?</0>"
     },
     "map-description-bb": {
-      "description": "We took a temperature map from the Landsat 8 satellite, which helped us to <0> detect buildings in the worst areas </0> of the center of Prague. The strong red color indicates a high temperature in the area."
+      "description": "We took a temperature map from the Landsat 8 satellite, which helped us to <0> detect buildings in the worst areas </0> of the center of Prague. The strong red color indicates a high temperature in the area. <0> We selected two areas with the biggest heat and they show 92 roofs in total.</0>"
     },
     "map-description-bb-cat": {
       "description": " If the city does not have enough money to convert 92 roofs into green roofs, we can select an even narrower selection of roofs - the following map shows <0> 21 buildings </0> in the area that belong only to <0> Category 1 or Category 2. </0>"
