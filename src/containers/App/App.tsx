@@ -64,6 +64,11 @@ const App: React.FC = () => {
                 <Shine>.</Shine>
             </Trans>
           </P>
+          <P>
+            <Trans i18nKey="sections.map-description.description3">
+                <Shine>.</Shine>
+            </Trans>
+          </P>
         </section>
       </Container>
       {/*

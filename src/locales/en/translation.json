@@ -17,8 +17,7 @@
       "header": "Open data <0>+</0> Satellite imagery <0>=</0>",
       "description1": "On the map, you can see <0> 1050 buildings</0> in the center of Prague, which can be converted into green roofs. The analysis divides them into <0> 4 categories </0> according to the following criteria - area, owner, surface, climb.",
       "description2": "On this map, there are <0> 45 buildings in category 1 </0> (the most suitable roof for green roof) that met the criteria.",
-     "description3": "" ,
-     "description4": "<0>But are those buildings really the ones with a negative impact on the environment?</0>"
+      "description3": "<0>But are those buildings really the ones with a negative impact on the environment?</0>"
     },
     "map-description-bb": {
       "description": "We took a temperature map from the Landsat 8 satellite, which helped us to <0> detect buildings in the worst areas </0> of the center of Prague. The strong red color indicates a high temperature in the area. <0> We selected two areas with the biggest heat and they show 92 roofs in total.</0>"
