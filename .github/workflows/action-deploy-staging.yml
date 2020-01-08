@@ -1,8 +1,8 @@
+name: Deploy staging
 on:
   push:
     branches:
       - "!master" # excludes master
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
