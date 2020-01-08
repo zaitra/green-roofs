@@ -1,4 +1,4 @@
-// Center of Prague
+/// Center of Prague
 export const centerPrague = [50.086385, 14.423693];
 // first rectangle
 export const bbOneBounds = [
