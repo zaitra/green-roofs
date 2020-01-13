@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <a href="https://zaitra.io/" target="blank">
           Zaitra s.r.o
         </a>
-        <span> 2019</span>
+        <span> 2020</span>
       </P>
     </footer>
   )
