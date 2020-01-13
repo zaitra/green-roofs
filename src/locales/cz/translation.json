@@ -6,23 +6,24 @@
     },
     "explanation": {
       "header": "Co je to <0>zelená střecha?</0>",
-      "description": "<0>Zelená střecha</0> je termín používaný pro stavbu se zeleným povrchem - tedy střecha pokryta vegetací. Zelené střechy mají pro budovu několik výhod, počínaje <0> absorpcí dešťové vody, poskytováním izolace,</0> vytvářením stanovišť pro volně žijící živočichy atd. Ale hlavně to skutečně <0> pomáhá snižovat teplotu městského vzduchu </0> a zmírňovat efekt tepelného ostrova."
+      "description": "<0>Zelená střecha</0> je termín používaný pro stavbu se zeleným povrchem - tedy střecha pokryta vegetací. Zelené střechy mají pro budovu několik výhod, počínaje <0> absorpcí dešťové vody, poskytováním izolace, vytvářením stanovišť pro volně žijící živočichy atd.</0>  Ale hlavně zelené střechy skutečně <0> pomáhají snižovat teplotu městského vzduchu </0> a zmírňovat efekt tepelného ostrova."
     },
     "motivation": {
       "header": "Motivace",
-      "par1": "Náš důkaz konceptu zelených střech v Praze byl založen na datech a analýzách připravených <0>Operátor ICT Data Platform.</0> Pro více informací klikněte <1> zde</1>.",
-      "par2": "Statistiky obecně ukazují, že za ideálních podmínek by mohlo být v Praze v České republice instalováno až <0> 1 659 ha zelených střech. </0>"
+      "par1": "Náš prototyp pro Prahu je založen na datech a analýzách připravených <0>Operátor ICT Data Platform.</0> Pro více informací klikněte <1> zde</1>.",
+      "par2": "Statistiky obecně ukazují, že za ideálních podmínek by mohlo být jenom v Praze instalováno až <0> 1 659 ha zelených střech. </0>"
     },
     "map-description": {
-      "header": "Otevřená data <0>+</0> kosmická data <0>=</0>",
-      "description1": "Na mapě je vidět <0> 1050 budov </0> v centru Prahy, které by mohly mít na zelené střechy. Analýza je rozděluje do <0> 4 kategorií </0> podle následujících kritérií - oblast, majitel, povrch, strmost.",
-      "description2": "Na této mapě je <0> 45 budov v kategorii 1 </0> (nejvhodnější kandidát pro zelenou střechu), které splňovaly kritéria. <0> Jsou však tyto budovy skutečně těmi, které mají negativní dopad na životní prostředí? </0>"
+      "header": "Otevřená data <0>+</0> satelitní snímky <0>=</0>",
+      "description1": "Na mapě je vidět <0> 1050 budov </0> v centru Prahy, které by mohly mít zelenou střechu. Analýza je rozděluje do <0> 4 kategorií </0> podle následujících kritérií - oblast, majitel, rozloha a strmost.",
+      "description2": "Na této mapě je <0> 45 budov v kategorii 1 </0> (nejvhodnější kandidát pro zelenou střechu), které splňovaly kritéria.",
+      "description3": "<0> Jsou však tyto budovy skutečně těmi, které mají negativní dopad na životní prostředí? </0>"
     },
     "map-description-bb": {
-      "description": "Vybrali jsme teplotní mapu ze satelitu Landsat 8, která nám pomohla <0> detekovat budovy v nejhorších částech </0> centra Prahy. Výrazně červená barva označuje vysokou teplotu v oblasti. "
+      "description": "Vybrali jsme teplotní mapu z družice Landsat 8, která nám pomohla <0> detekovat budovy v nejteplejších částech </0> centra Prahy. Výrazně červená barva označuje vysokou teplotu v oblasti. <0>Vybrali jsme dvě oblasti s nejvyššími teplotami - ty dohromady obsahují 92 potenciálních zelených střech.</0>  "
     },
     "map-description-bb-cat": {
-      "description": "Pokud město nemá dostatek peněz na přeměnu 92 střech na zelené střechy, můžeme vybrat ještě užší výběr střech - na následující mapě je znázorněno <0>21 budov</0> v oblasti, které patří pouze do <0>kategorie 1 nebo kategorie 2.</0>"
+      "description": "Pokud město nemá dostatek peněz na přeměnu 92 střech na zelené střechy, můžeme vytvořit ještě užší výběr - na následující mapě je znázorněno <0>21 budov</0> v oblasti, které patří pouze do <0>kategorie 1 nebo kategorie 2.</0>"
     },
     "conclusion": "Po převodu těchto střech na zelené střechy můžeme zjistit, <0>zda se teplotní mapa v daných oblastech zlepšila</0>, což může pozitivně ovlivnit život v Praze."
   }
