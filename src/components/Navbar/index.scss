@@ -1,0 +1,36 @@
+/**
+* 
+* Navbar.scss
+*
+*/
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  
+  .list :nth-child(1) {
+    border-right: 1px solid #45b549;
+    border-radius: 0;
+  }
+
+  button {
+    color: #45b549;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0 0.5rem;
+
+    &:hover {
+      color: #009548;
+    }
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:active {
+      color: #009548;
+    }
+  }
+  img {
+    width: 50px;
+  }
+}

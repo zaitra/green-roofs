@@ -1,23 +1,18 @@
 {
-  "name": "green-roofs",
+  "name": "greenroofs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zaitra.github.io/green-roofs/",
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build:production": "env-cmd -f .env.production react-scripts build",
+    "build:staging": "env-cmd -f .env.staging react-scripts build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "browserslist": {
     "production": [
@@ -31,7 +26,37 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-leaflet": "^2.5.0",
+    "@types/shortid": "^0.0.29",
+    "bootstrap": "^4.4.1",
+    "env-cmd": "^10.0.1",
+    "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^2.1.1",
+    "i18next": "^19.0.2",
+    "i18next-browser-languagedetector": "^4.0.1",
+    "leaflet": "^1.6.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-i18next": "^11.2.6",
+    "react-leaflet": "^2.6.1",
+    "react-scripts": "3.3.0",
+    "shortid": "^2.2.15",
+    "typescript": "~3.7.2"
+  },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "@will-stone/prettier-config": "^2.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-simple-import-sort": "^5.0.0",
+    "prettier": "^1.19.1"
   }
 }
