@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "https://surfer19.github.io/green-roofs/static/css/main.fed6b617.chunk.css",
+    "main.js": "https://surfer19.github.io/green-roofs/static/js/main.eef1e916.chunk.js",
+    "main.js.map": "https://surfer19.github.io/green-roofs/static/js/main.eef1e916.chunk.js.map",
+    "runtime-main.js": "https://surfer19.github.io/green-roofs/static/js/runtime-main.e52a5657.js",
+    "runtime-main.js.map": "https://surfer19.github.io/green-roofs/static/js/runtime-main.e52a5657.js.map",
+    "static/css/2.64a99b10.chunk.css": "https://surfer19.github.io/green-roofs/static/css/2.64a99b10.chunk.css",
+    "static/js/2.1f283af6.chunk.js": "https://surfer19.github.io/green-roofs/static/js/2.1f283af6.chunk.js",
+    "static/js/2.1f283af6.chunk.js.map": "https://surfer19.github.io/green-roofs/static/js/2.1f283af6.chunk.js.map",
+    "index.html": "https://surfer19.github.io/green-roofs/index.html",
+    "precache-manifest.7846f0142a6155e81095da8977e2d5b4.js": "https://surfer19.github.io/green-roofs/precache-manifest.7846f0142a6155e81095da8977e2d5b4.js",
+    "service-worker.js": "https://surfer19.github.io/green-roofs/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "https://surfer19.github.io/green-roofs/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.fed6b617.chunk.css.map": "https://surfer19.github.io/green-roofs/static/css/main.fed6b617.chunk.css.map",
+    "static/js/2.1f283af6.chunk.js.LICENSE": "https://surfer19.github.io/green-roofs/static/js/2.1f283af6.chunk.js.LICENSE",
+    "static/media/index.scss": "https://surfer19.github.io/green-roofs/static/media/green-building-top.8a4c86e8.jpg",
+    "static/media/green-roofs-logo-leaf.svg": "https://surfer19.github.io/green-roofs/static/media/green-roofs-logo-leaf.41eb8d90.svg",
+    "static/media/green-roofs-logo.svg": "https://surfer19.github.io/green-roofs/static/media/green-roofs-logo.9d3a3414.svg",
+    "static/media/heatmap.jpg": "https://surfer19.github.io/green-roofs/static/media/heatmap.dc9cf7d9.jpg",
+    "static/media/zaitra-logo.svg": "https://surfer19.github.io/green-roofs/static/media/zaitra-logo.34b5f337.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e52a5657.js",
+    "static/css/2.64a99b10.chunk.css",
+    "static/js/2.1f283af6.chunk.js",
+    "static/css/main.fed6b617.chunk.css",
+    "static/js/main.eef1e916.chunk.js"
+  ]
+}
