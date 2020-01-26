@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f170f856a504f9255a8fea03d8b4eaf8",
+    "revision": "01b71256e2e84241e58b211dad4e8ac2",
     "url": "/green-roofs/index.html"
   },
   {
-    "revision": "0f6516a4e181feb599e3",
+    "revision": "c416677d8da51e8b0ee9",
     "url": "/green-roofs/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "81e91b9425468783c9fe",
-    "url": "/green-roofs/static/css/main.31a31dec.chunk.css"
+    "revision": "34bafc9effb2e2912042",
+    "url": "/green-roofs/static/css/main.b62d9785.chunk.css"
   },
   {
-    "revision": "0f6516a4e181feb599e3",
-    "url": "/green-roofs/static/js/2.1f283af6.chunk.js"
+    "revision": "c416677d8da51e8b0ee9",
+    "url": "/green-roofs/static/js/2.3166ebc9.chunk.js"
   },
   {
-    "revision": "ce3126c332c3bc8f1544c88c174f7c51",
-    "url": "/green-roofs/static/js/2.1f283af6.chunk.js.LICENSE"
+    "revision": "a9b97762f6d6e85e5da3d8b0ec561f4a",
+    "url": "/green-roofs/static/js/2.3166ebc9.chunk.js.LICENSE"
   },
   {
-    "revision": "81e91b9425468783c9fe",
-    "url": "/green-roofs/static/js/main.26b884ee.chunk.js"
+    "revision": "34bafc9effb2e2912042",
+    "url": "/green-roofs/static/js/main.decdbdea.chunk.js"
   },
   {
     "revision": "e5f385243942a9267895",
@@ -44,8 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/green-roofs/static/media/green-roofs-logo.9d3a3414.svg"
   },
   {
+    "revision": "4cc581d2ed254dae72553a343f0e1694",
+    "url": "/green-roofs/static/media/heatmap-after.4cc581d2.jpg"
+  },
+  {
     "revision": "dc9cf7d9bc465eb50983846b4fca49d1",
     "url": "/green-roofs/static/media/heatmap.dc9cf7d9.jpg"
+  },
+  {
+    "revision": "7c30ca3928ccb33b9b4097c66641869a",
+    "url": "/green-roofs/static/media/mapIcon.7c30ca39.svg"
   },
   {
     "revision": "34b5f337fdb6688a987e9716f82457d2",
