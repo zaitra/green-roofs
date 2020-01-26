@@ -25,6 +25,26 @@
     "map-description-bb-cat": {
       "description": "Pokud město nemá dostatek peněz na přeměnu 92 střech na zelené střechy, můžeme vytvořit ještě užší výběr - na následující mapě je znázorněno <0>21 budov</0> v oblasti, které patří pouze do <0>kategorie 1 nebo kategorie 2.</0>"
     },
-    "conclusion": "Po převodu těchto střech na zelené střechy můžeme zjistit, <0>zda se teplotní mapa v daných oblastech zlepšila</0>, což může pozitivně ovlivnit život v Praze."
-  }
+	"conclusion": "Po převodu těchto střech na zelené střechy můžeme zjistit, <0>zda se teplotní mapa v daných oblastech zlepšila</0>, což může pozitivně ovlivnit život v Praze.",
+	"difference": {
+		"before": "Před zavedením zelených střech",
+		"after": "Po zavedení zelených střech"
+	}
+  },
+  	"map": {
+		"legend": {
+			"description": {
+				"prague": "Vlastní město Praha",
+				"cz": "Vlastní ČR",
+				"different": "Jiný vlastník"
+			},
+			"category": "Kategorie",
+			"after-click": "po kliknutí na budovu se zobrazí její lokace"
+		},
+		"popup": {
+			"owner": "Vlastníci",
+			"used-for": "Používaný na",
+			"area": "Rozloha"
+		}
+	}
 }

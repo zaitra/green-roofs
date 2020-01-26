@@ -25,6 +25,10 @@
     "map-description-bb-cat": {
       "description": " If the city does not have enough money to convert 92 roofs into green roofs, we can select an even narrower selection of roofs - the following map shows <0> 21 buildings </0> in the area that belong only to <0> Category 1 or Category 2. </0>"
     },
-    "conclusion": "After converting these roofs to green-roofs, we can detect whether <0> the temperature map has improved in the given areas,</0> which can positively affect the lives of people in Prague."
-  }
+	"conclusion": "After converting these roofs to green-roofs, we can detect whether <0> the temperature map has improved in the given areas,</0> which can positively affect the lives of people in Prague.",
+	"difference": {
+		"before": "Before installing green roofs",
+		"after": "After installing green roofs"
+	}
+	}
 }
