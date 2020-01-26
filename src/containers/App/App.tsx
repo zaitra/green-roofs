@@ -8,7 +8,7 @@ import bb2Roofs from "./data/bb2_roofs.json"
 import bb1Categ from "./data/bb1_roofs_categorized.json"
 import bb2Categ from "./data/bb2_roofs_categorized.json"
 
-import { centerPrague, bbOneBounds, bbTwoBounds, heatBounds } from "./coordinates";
+import { centerPrague, centerHlavni , bbOneBounds, bbTwoBounds, heatBounds } from "./coordinates";
 import logo from "../../svg/green-roofs-logo-leaf.svg";
 // import components
 import Map from "../../components/Map"
@@ -22,6 +22,8 @@ import H2 from "../../components/H2";
 import P from "../../components/P";
 import MapContainer from "../../components/MapContainer";
 import Footer from "../../components/Footer";
+import heatmapImg from "../../img/heatmap.jpg";
+import heatmapImgAfter from "../../img/heatmap-after.jpg";
 
 const App: React.FC = () => {
   const { t } = useTranslation();
@@ -75,7 +77,7 @@ const App: React.FC = () => {
        * All roofs
        */}
       <MapContainer>
-        <Map geojsonData={[allRoofs]} zoom="15" center={centerPrague} addFeatures={false} />
+        <Map geojsonData={[allRoofs]} zoom="15" center={centerPrague} popups={false} />
       </MapContainer>
       {/*
        * Roofs only in bounding box 1&2 description + Map
@@ -93,7 +95,8 @@ const App: React.FC = () => {
         <Map
           geojsonData={[bb1Roofs, bb2Roofs]}
           zoom="15"
-          center={centerPrague}
+		  center={centerPrague}
+		  heatMapImg={heatmapImg}
           heatMapBounds={heatBounds}
           bounds={[bbOneBounds, bbTwoBounds]}
         />
@@ -125,6 +128,44 @@ const App: React.FC = () => {
           </P>
         </section>
       </Container>
+	  <section className="container-fluid">
+		<div className="row section-difference mb-5">
+			<div className="col-6">
+				<div className="row text-center">
+					<div className="col-md-12">
+						<P>{t("sections.difference.before")}:</P>
+					</div>
+				</div>
+				<MapContainer>
+					<Map 
+						bounds={[bbOneBounds, bbTwoBounds]}
+						zoom="15" 
+						center={centerHlavni} 
+						heatMapBounds={heatBounds}
+						heatMapImg={heatmapImg}
+						legend={false}
+					/>
+				</MapContainer>
+			</div>
+			<div className="col-6">
+				<div className="row text-center">
+					<div className="col-md-12">
+						<P>{t("sections.difference.after")}:</P>
+					</div>
+				</div>
+				<MapContainer>
+					<Map 
+						bounds={[bbOneBounds, bbTwoBounds]}
+						zoom="15" 
+						center={centerHlavni} 
+						heatMapBounds={heatBounds}
+						heatMapImg={heatmapImgAfter}
+						legend={false}
+					/>
+				</MapContainer>
+			</div>
+		</div>
+	  </section>
       {/*
        * Footer
        */}

@@ -4,12 +4,15 @@
 
 export interface IMapProps {
     zoom?: any,
-    geojsonData: any,
+    geojsonData?: any,
     center?: any,
     bounds?: any,
     heatMapBounds?: any,
     geoStyle?: any,
-    addFeatures?: any
+	addFeatures?: any,
+	legend?: any,
+	popups?: any
+	heatMapImg?: any
 }
 export interface H2Props {
     className?: String,

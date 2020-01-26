@@ -1,7 +1,3 @@
-
 {
-    "prettier/prettier": [
-        "error", 
-        {"semi": false}       
-    ]
+  "prettier/prettier": ["error", { "semi": false, "tabWidth": 2 }]
 }
