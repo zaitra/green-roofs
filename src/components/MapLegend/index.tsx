@@ -57,12 +57,13 @@ class MapLegend extends MapControl<any, any> {
 
 		categories.map(category => {		  
 			labels.push(
-			`<i style="background: ${getColor(category.type)}"></i> 
-			${t.category} ${category.type} (${category.description})`
+			`<div class="col-12"><i style="background: ${getColor(category.type)}"></i>
+				<span class="label">${t.category} ${category.type} (${category.description})</span>
+			</div>`
 			);
 		})
-		labels.push(`<span>* ${t.afterclick}</span>`)
-		div.innerHTML = labels.join("<br>");
+		labels.push(`<div class="col-12 mt-2">* ${t.afterclick}</div>`)
+		div.innerHTML = labels.join("");
 		return div;
 		};
 	

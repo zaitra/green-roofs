@@ -1,27 +1,28 @@
 .info {
-	padding: 6px 8px;
-	font: 14px/16px Arial, Helvetica, sans-serif;
+	padding: 0.5rem 0;
 	background: white;
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
+
+	.label {
+
+	}
   }
   
   .legend {
-	text-align: left;
 	line-height: 18px;
 	color: #555;
 	font-size: 1em;
   }
   
   .legend i {
-	width: 18px;
-	height: 18px;
-	float: left;
-	margin-right: 8px;
+	display: inline-block;
+	width: 0.7rem;
+	height: 0.7rem;
   }
 
   .legend span {
-	  font-size: 0.8em;
+	  font-size: 0.8rem;
   }
   
