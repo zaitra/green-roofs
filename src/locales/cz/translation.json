@@ -34,8 +34,8 @@
   	"map": {
 		"legend": {
 			"description": {
-				"prague": "Vlastní město Praha",
-				"cz": "Vlastní ČR",
+				"prague": "Vlastní: město Praha",
+				"cz": "Vlastník: ČR",
 				"different": "Jiný vlastník"
 			},
 			"category": "Kategorie",
