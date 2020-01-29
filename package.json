@@ -2,7 +2,7 @@
   "name": "greenroofs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zaitra.github.io/green-roofs/",
+  "homepage": "https://greenroofs.zaitra.io/",
   "scripts": {
     "build": "react-scripts build",
     "build:production": "env-cmd -f .env.production react-scripts build",
