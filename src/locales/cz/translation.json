@@ -34,12 +34,14 @@
   	"map": {
 		"legend": {
 			"description": {
-				"prague": "Vlastník: město Praha",
-				"cz": "Vlastník: ČR",
-				"different": "Jiný vlastník"
+				"prague": "město Praha",
+				"cz": "ČR",
+				"different": "Jiný vlastník",
+				"owner": "Vlastník"
 			},
 			"category": "Kategorie",
-			"after-click": "po kliknutí na budovu se <br/> zobrazí její lokace"
+			"after-click": "po kliknutí na budovu se <br/> zobrazí její lokace",
+			"after-hover": "pokud najedete myší na konktrétní budovu, zobrazí se vám vlastník a 3D pohled - lépe se tak přemýšlí nad umístění zelené střechy"
 		},
 		"popup": {
 			"owner": "Vlastníci",

@@ -75,6 +75,8 @@ const Map: React.FC <IMapProps> = ({
 		different: t("map.legend.description.different"),
 		category: t("map.legend.category"),
 		afterclick: t("map.legend.after-click"),
+		afterhover: t("map.legend.after-hover"),
+		owner: t("map.legend.description.owner")
 	}
   return (
     <LeafletMap zoom={zoom} center={center} scrollWheelZoom={false}>
@@ -119,8 +121,7 @@ const Map: React.FC <IMapProps> = ({
         * GENERATE legend for map
         * 
       */}
-	  {/* {console.log('pragggg change', t("map.legend.description.prague"))} */}
-	  { legend ? <MapLegend translations={translationsLegend} /> : null }
+	  { legend ? <MapLegend translations={translationsLegend} hoverMessage={popups} /> : null }
     </LeafletMap>
   )
 }
@@ -174,7 +175,6 @@ const getCategoryNumberByProperties = (properties :any) :number => {
 const attachComponentToPopup = (feature: any, t: any) =>  {
 	const bulgarianConstant = 0.00015;
 	const {lat, lng} :any = GetCenterFromDegrees(feature.geometry.coordinates[0][0])
-	// console.log('centerOfBuilding', centerOfBuilding)
 	const center3d = {  
 		lat: lat + bulgarianConstant,
 		lng: lng,
@@ -203,7 +203,6 @@ const attachComponentToPopup = (feature: any, t: any) =>  {
 			</div>
 		)
 	}
-	// console.log('el', document.getElementsByClassName('leaflet-popup-pane')[0])
 	let el = document.getElementsByClassName(feature.properties.objectid)[0];
 	
 	if (el) {
