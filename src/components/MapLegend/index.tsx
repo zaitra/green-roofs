@@ -58,7 +58,7 @@ class MapLegend extends MapControl<any, any> {
 		categories.map(category => {		  
 			labels.push(
 			`<div class="col-12"><i style="background: ${getColor(category.type)}"></i>
-				<span class="label">${t.category} ${category.type} (${category.description})</span>
+				<span class="label">${category.description}</span>
 			</div>`
 			);
 		})

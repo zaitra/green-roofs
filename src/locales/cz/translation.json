@@ -34,12 +34,12 @@
   	"map": {
 		"legend": {
 			"description": {
-				"prague": "Vlastní: město Praha",
+				"prague": "Vlastník: město Praha",
 				"cz": "Vlastník: ČR",
 				"different": "Jiný vlastník"
 			},
 			"category": "Kategorie",
-			"after-click": "po kliknutí na budovu se zobrazí její lokace"
+			"after-click": "po kliknutí na budovu se <br/> zobrazí její lokace"
 		},
 		"popup": {
 			"owner": "Vlastníci",
