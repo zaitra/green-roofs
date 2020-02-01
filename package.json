@@ -29,6 +29,9 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -37,7 +40,9 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@types/react-fontawesome": "^1.6.4",
     "@types/react-leaflet": "^2.5.0",
+    "@types/reactstrap": "^8.4.1",
     "@types/recompose": "^0.30.7",
     "@types/shortid": "^0.0.29",
     "bootstrap": "^4.4.1",
@@ -55,6 +60,7 @@
     "react-i18next": "^11.2.6",
     "react-leaflet": "^2.6.1",
     "react-scripts": "3.3.0",
+    "reactstrap": "^8.4.1",
     "recompose": "^0.30.0",
     "shortid": "^2.2.15",
     "typescript": "~3.7.2"
