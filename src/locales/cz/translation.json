@@ -36,12 +36,12 @@
 			"description": {
 				"prague": "město Praha",
 				"cz": "ČR",
-				"different": "Jiný vlastník",
+				"different": "jiný",
 				"owner": "Vlastník"
 			},
 			"category": "Kategorie",
-			"after-click": "po kliknutí na budovu se <br/> zobrazí její lokace",
-			"after-hover": "pokud najedete myší na konktrétní budovu, zobrazí se vám vlastník a 3D pohled - lépe se tak přemýšlí nad umístění zelené střechy"
+			"after-click": "Pokud kliknete na konkrétní budovu zobrazí se její pozice na google mapách.",
+			"after-hover": "Pokud najedete myší na konktrétní budovu, zobrazí se vám vlastník a 3D pohled - lépe se tak přemýšlí nad umístění zelené střechy."
 		},
 		"popup": {
 			"owner": "Vlastníci",

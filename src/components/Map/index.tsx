@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next"
 import GoogleMapReact from 'google-map-react'
 import { IMapProps } from "../../types"
 import { Marker } from '../Marker';
+import Control from '../MapControl';
 import MapLegend from '../MapLegend';
 
 const defaultGeo = {
@@ -21,6 +22,8 @@ const defaultGeo = {
   opacity: 1,
   color: "#009548"
 }
+
+const boundsColor = "#bfbf04"
 
 const Map: React.FC <IMapProps> = ({ 
   geojsonData = [],
@@ -69,15 +72,7 @@ const Map: React.FC <IMapProps> = ({
 			attachComponentToPopup(feature, t)
 		});
 	}
-	const translationsLegend = {
-		prague: t("map.legend.description.prague"),
-		cz: t("map.legend.description.cz"),
-		different: t("map.legend.description.different"),
-		category: t("map.legend.category"),
-		afterclick: t("map.legend.after-click"),
-		afterhover: t("map.legend.after-hover"),
-		owner: t("map.legend.description.owner")
-	}
+
   return (
     <LeafletMap zoom={zoom} center={center} scrollWheelZoom={false}>
       {/* GENERATE map background */}
@@ -91,7 +86,7 @@ const Map: React.FC <IMapProps> = ({
         return (
           <Rectangle
             bounds={bound}
-            color="#009548"
+            color={boundsColor}
             opacity={0.8}
             fillOpacity={0}
             key={shortid.generate()}
@@ -121,7 +116,12 @@ const Map: React.FC <IMapProps> = ({
         * GENERATE legend for map
         * 
       */}
-	  { legend ? <MapLegend translations={translationsLegend} hoverMessage={popups} /> : null }
+	  	{ legend
+		 	?  <Control position="bottomright">
+					<MapLegend legendList={["1", "2", "3/4"]} showPopupsInfoMessage={popups}/>
+				</Control>
+			: null 
+		}
     </LeafletMap>
   )
 }

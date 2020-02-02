@@ -1,24 +1,90 @@
-.info {
-	padding: 0.5rem 0;
-	background: white;
+.legend {
 	background: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-	border-radius: 5px;
-  }
-  
-  .legend {
-	line-height: 18px;
 	color: #555;
+	padding: 0.5rem;
+	border-radius: 5px;
+	line-height: 18px;
 	font-size: 1em;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+	.info-description {
+		font-weight: 600;
+	}
+	// override bootstrap
+	.list-group {
+		min-height: 1.7rem;
+		.list-group-item {
+			background: transparent;
+			border: none;
+			border-radius: 0;
+			padding: 0;
+			width: 100%;
+			&.purple { 
+				border-bottom: 2px solid #7f00ff;
+				color: #7f00ff;
+			}
+			&.blue { 
+				border-bottom: 2px solid #4990E2;
+				color: #4990E2
+			}
+			&.green {
+				border-bottom: 2px solid #009548; 
+				color: #009548;
+			}
+		}
+	}
+	
+	.list-group-info {
+		margin-top: 0.1rem;
+
+		.list-group-item {
+			&:nth-child(1) {
+				width: 20%;	
+			}
+			&:nth-child(2) {
+				padding-left: 0.3rem;
+			}
+		}
+	}
+
+	i {
+		display: inline-block;
+		width: 1.7rem;
+		height: 100%;
+		margin-right: 5px;
+		&.purple { background: #7f00ff; }
+		&.blue { background: #4990E2; }
+		&.green { background: #009548; }
+	}
+	span {
+		font-size: 0.8rem;
+		strong {
+			font-size: 0.9rem;
+		}
+	}
+}
+  
+
+  /* tooltip styles */
+  .react-tooltip-lite {
+	font-size: 12px;
+	background: #333;
+	color: white;
+	max-width: 15rem!important;
+	border-radius: 0.5rem;
+	text-align: center;
   }
   
-  .legend i {
-	display: inline-block;
-	width: 0.9rem;
-	height: 0.9rem;
+  .react-tooltip-lite a {
+	color: #86b0f4;
+	text-decoration: none;
   }
-
-  .legend span {
-	  font-size: 0.9rem;
+  
+  .react-tooltip-lite a:hover {
+	color: #4286f4;
+  }
+  
+  .react-tooltip-lite-arrow {
+	border-color: #333;
   }
   

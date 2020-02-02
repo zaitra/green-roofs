@@ -60,10 +60,12 @@
     "react-i18next": "^11.2.6",
     "react-leaflet": "^2.6.1",
     "react-scripts": "3.3.0",
+    "react-tooltip-lite": "^1.11.2",
     "reactstrap": "^8.4.1",
     "recompose": "^0.30.0",
     "shortid": "^2.2.15",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "@will-stone/prettier-config": "^2.0.1",
