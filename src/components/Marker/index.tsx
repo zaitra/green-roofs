@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Marker = ({lat, lng} :any) => (
+export const Marker = () => (
     <div className="marker"/>
 );
 

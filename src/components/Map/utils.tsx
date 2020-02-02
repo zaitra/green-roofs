@@ -69,7 +69,7 @@ export const attachComponentToPopup = (feature: any, t: any) =>  {
 							rotateControl: false
 						}}
 					>
-						<Marker lat={center3d.lat} lng={center3d.lng} />
+						<Marker />
 
 					</GoogleMapReact>
 				</div>

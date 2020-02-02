@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface IMapLegendRowProps {
-	categoryData: any
-}
+import { IMapLegendRowProps } from '../../types';
 
 const MapLegendRow: React.FC <IMapLegendRowProps> = ({
 	categoryData

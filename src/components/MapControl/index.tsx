@@ -1,7 +1,11 @@
 import ReactDOM from "react-dom";
 import { MapControl, withLeaflet } from "react-leaflet";
 import { Control, DomUtil, DomEvent } from "leaflet";
-
+/*
+ *
+ *  Code copied from library: https://www.npmjs.com/package/react-leaflet-control
+ * 	It's basic wrapper of element on map you can put to 4 map corners
+ */
 const DumbControl = Control.extend({
   options: {
     className: "",

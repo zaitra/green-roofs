@@ -4,11 +4,7 @@ import { useTranslation } from "react-i18next";
 import MapLegendRowInfo from '../MapLegendRowInfo';
 import MapLegendRow from "../MapLegendRow";
 import { getDataByCategoryType } from "./utils"
-
-interface IMapLegendNewProps {
-	legendList: Array<String>
-	showPopupsInfoMessage: boolean
-}
+import { IMapLegendNewProps } from "../../types";
 
 const MapLegend: React.FC <IMapLegendNewProps> = ({
 	legendList,
