@@ -17,9 +17,9 @@ const MapLegend: React.FC <IMapLegendNewProps> = ({
 	const { t } = useTranslation();
 	return (
 		<div className="legend">
-			{legendList.map((legendType :any) => {
+			{legendList.map((legendType :any, i) => {
 				let categoryData = getDataByCategoryType(legendType, t);
-				return <MapLegendRow categoryData={categoryData}/>;
+				return <MapLegendRow categoryData={categoryData} key={i}/>;
 			})}
 			{showPopupsInfoMessage ? 
 				<div>

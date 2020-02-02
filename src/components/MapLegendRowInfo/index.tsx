@@ -8,37 +8,28 @@ const MapLegendRowInfo: React.FC <any> = ({
 	tooltipText
 }) => {
 	const iconInfo = <FontAwesomeIcon icon={faInfoCircle} size="2x"/>
+	let firstColumnItems = [iconInfo, tooltipLabelText]
+	const tooltipLists = firstColumnItems.map((item, i) => {
+		return (
+			<li className={`list-group-item d-flex align-items-center`} key={i}>
+				<Tooltip
+					content={(
+						<p>{tooltipText}</p>
+					)}
+					direction="down"
+					tagName="span"
+					className="target"
+					tipContentClassName=""
+					>
+					{item}
+				</Tooltip>
+			</li>
+		)
+	})
 
 	return (
 		<ul className="list-group-info list-group list-group-horizontal mt-1">
-			{/* first column */}
-			<li className={`list-group-item d-flex align-items-center`}>
-				<Tooltip
-					content={(
-						<p>{tooltipText}</p>
-					)}
-					direction="down"
-					tagName="span"
-					className="target"
-					tipContentClassName=""
-					>
-					{iconInfo}
-				</Tooltip>
-			</li>
-			{/* second column */}
-			<li className={`list-group-item d-flex align-items-center`}>
-				<Tooltip
-					content={(
-						<p>{tooltipText}</p>
-					)}
-					direction="down"
-					tagName="span"
-					className="target"
-					tipContentClassName=""
-					>
-					{tooltipLabelText}
-				</Tooltip>
-			</li>
+			{tooltipLists}
 		</ul>
 	)
 }

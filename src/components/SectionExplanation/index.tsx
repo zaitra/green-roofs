@@ -3,10 +3,9 @@ import H2 from "../H2"
 import P from "../P"
 import Shine from "../Shine"
 import Container from "../Container"
-import { Trans, useTranslation } from "react-i18next"
+import { Trans } from "react-i18next"
 
 const SectionExplanation: React.FC = () => {
-  const { t } = useTranslation();
   return (
     <section className="section text-center">
       <Container>
