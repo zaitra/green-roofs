@@ -32,3 +32,14 @@ export interface IPProps {
 export interface IShineProps {
     children: String
 }
+export interface IMapLegendRowInfoProps {
+	tooltipLabelText: String,
+	tooltipText: String
+}
+export interface IMapLegendRowProps {
+	categoryData: any
+}
+export interface IMapLegendNewProps {
+	legendList: Array<String>
+	showPopupsInfoMessage: boolean
+}
