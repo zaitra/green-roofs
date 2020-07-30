@@ -27,8 +27,8 @@
     },
 	"conclusion": "After converting these roofs to green-roofs, we can detect whether <0> the temperature map has improved in the given areas,</0> which can positively affect the lives of people in Prague.",
 	"difference": {
-		"before": "Before installing green roofs",
-		"after": "After installing green roofs"
+		"before": "Our simulation before installing green roofs",
+		"after": "Our simulation after installing green roofs"
 	}
 	}
 }
