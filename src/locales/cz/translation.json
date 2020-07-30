@@ -27,8 +27,8 @@
     },
 	"conclusion": "Po převodu těchto střech na zelené střechy můžeme zjistit, <0>zda se teplotní mapa v daných oblastech zlepšila</0>, což může pozitivně ovlivnit život v Praze.",
 	"difference": {
-		"before": "Před zavedením zelených střech",
-		"after": "Po zavedení zelených střech"
+		"before": "Naše simulace před zavedením zelených střech",
+		"after": "Naše simulace po zavedení zelených střech"
 	}
   },
   	"map": {
